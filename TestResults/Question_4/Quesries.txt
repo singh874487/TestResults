@@ -1,0 +1,11 @@
+
+1) Write a query to find Customers and their orders.
+SELECT * FROM Customers c, Orders o where c.CustomerId = o.CustomerId;
+
+2) Write a query to find Customers and the orders including customers who have not placed orders.
+SELECT * FROM Customers right outer join Orders ;
+ 
+3) Write a query to find customers and Employees who are serving the customer.
+select * from Customers c, Orders o ,  Employees e where c.CustomerID = o.CustomerID and o.EmployeeID = o.EmployeeID;
+
+
